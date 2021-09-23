@@ -1,0 +1,70 @@
+.logoDiv {
+    grid-area: 1 / 1 / 2 / 8;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: .8rem;
+    grid-row-gap: .8rem;
+    cursor: pointer;
+}
+
+.logoDiv > div {
+    height: 100%;
+    background-color: #323337;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileVersion {
+    display: none;
+}
+
+.logoDiv__menuBtn {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.logoDiv__logoDiv {
+    grid-area: 1 / 2 / 2 / 8;
+    transition-duration: 300ms;
+}
+
+.full_logoDiv_logoDiv {
+    grid-area: 1 / 1 / 2 / 8;
+}
+
+.logoDiv > div svg {
+    fill: #dbdbdd;
+    width: 2.3rem;
+    border-radius: 3px;
+    padding: .1rem;
+    transition-duration: 300ms;
+}
+
+.logoDiv h1 {
+    font-size: 1.5rem;
+    color: #11aff0;
+    position: relative;
+    letter-spacing: .2rem;
+    transition-duration: 200ms;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.logoDiv h1 span {
+    color: #DBDBDD;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .logoDiv h1 {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .desktopVersion {
+        display: none;
+    }
+    .MobileVersion {
+        display: inline-block;
+    }
+}

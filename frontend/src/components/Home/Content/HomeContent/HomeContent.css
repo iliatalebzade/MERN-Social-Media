@@ -1,0 +1,58 @@
+.bannerspart__banner {
+    width: 100%;
+    min-height: 20rem;
+    position: relative;
+}
+
+.bannerspart__banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+
+.bannerspart__banner .overlay {
+    background-color: rgba(0, 68, 95, 0.466);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerspart__banner .overlay h2 {
+    font-size: 2rem;
+    color: #DBDBDD;
+    text-align: center;
+    padding: 2rem;
+}
+
+.bannerspart__banner .overlay h2 span {
+    color: rgb(13, 174, 238);
+    border-bottom: 5px solid rgb(13, 174, 238);
+}
+
+.exploreartslist h2 {
+    margin: 1.6rem 0;
+    color: #DBDBDD;
+    padding-left: .8rem;
+    border-left: 5px solid rgb(13, 174, 238);
+    gap: .8rem;
+}
+
+.itemsContainer {
+    padding: .8rem;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.inner__itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}

@@ -1,0 +1,33 @@
+ul {
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 7 / 2;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li a {
+    transition-duration: 200ms;
+    text-decoration: none;
+    color: #d0d2d4;
+}
+
+ul li a:hover {
+    transition-duration: 200ms;
+    padding-left: .5rem;
+    text-decoration: none;
+    color: #DBDBDD;
+}
+
+.loggedInUserActions a{
+    color: #a4e5ff;
+}
+
+.loggedInUserActions a:hover{
+    color: #a4e5ff;
+}

@@ -1,0 +1,82 @@
+.signin {
+    grid-area: 2 / 1 / 11 / 8;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: .8rem;
+    grid-row-gap: .8rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.signin__bannerDiv {
+    grid-area: 1 / 5 / 11 / 6;
+}
+
+.signin__bannerDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signin__formDiv {
+    grid-area: 1 / 1 / 11 / 5;
+    background-color: #323337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signin__formDiv h2 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+    color: #11AFF0;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.signin__formDiv form {
+    display: flex;
+    flex-direction: column;
+    min-width: 25rem;
+}
+
+.signin__formDiv form input{
+    border: none;
+    border-radius: 4px;
+    background-color: #151515;
+    color: #11AFF0;
+    padding: .8rem;
+    margin-bottom: .8rem;
+}
+
+.signin__formDiv form button {
+    margin-bottom: .8rem;
+    font-weight: 600;
+}
+
+.signin__formDiv form input::placeholder {
+    color: #11AFF0;
+}
+
+.signin__formDiv h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 700px) {
+    .signin__formDiv {
+        grid-area: 1 / 1 / 11 / 6;
+    }
+
+    .signin__bannerDiv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .signin__formDiv form {
+        min-width: 15rem;
+    }
+}

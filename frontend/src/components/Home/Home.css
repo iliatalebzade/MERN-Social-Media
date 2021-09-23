@@ -1,0 +1,88 @@
+.app > .accountCredentials {
+    grid-area: 1 / 2 / 2 / 8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app > .openNav {
+    grid-area: 2 / 1 / 11 / 2;
+    background-color: #323337;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: .8rem;
+}
+
+.app > .closedNav {
+    display: none;
+}
+
+.openNavMOBILE {
+    display: none;
+}
+
+.collapseItem {
+    cursor: pointer;
+}
+
+.closedNavMOBILE {
+    display: none;
+}
+
+.app > .openNavHomecontent {
+    grid-area: 2 / 2 / 11 / 8;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.app > .openNavHomecontent::-webkit-scrollbar {
+    display: none;
+}
+
+.app > .openNavHomecontent {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app > .closedNavHomecontent {
+    grid-area: 2 / 1 / 11 / 8;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.app > .closedNavHomecontent::-webkit-scrollbar {
+    display: none;
+}
+
+.app > .closedNavHomecontent {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .app > .openNav {
+        display: none;
+    }
+    .app > .openNavHomecontent {
+        grid-area: 2 / 1 / 11 / 8;
+    }
+    .openNavMOBILE {
+        background-color: #323337;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 2rem;
+        z-index: 1000;
+        height: 100vh;
+        border-radius: 8px;
+    }
+}

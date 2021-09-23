@@ -1,0 +1,237 @@
+.signUp {
+    grid-area: 2 / 1 / 11 / 8;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: .8rem;
+    grid-row-gap: .8rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.signUp__bannerDiv {
+    grid-area: 1 / 5 / 11 / 6;
+}
+
+.signUp__bannerDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signUp__formDiv {
+    grid-area: 1 / 1 / 11 / 5;
+    background-color: #323337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signUp__formDiv h2 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+    color: #11AFF0;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.stepsContentContainer {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.buttondivision {
+    display: flex;
+    gap: .8rem;
+    margin-bottom: .8rem;
+}
+
+.buttondivision > button {
+    flex: 1;
+    padding: .8rem;
+}
+
+.signUp__formDiv h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.MuiPaper-root {
+    background-color: transparent !important;
+}
+
+.MuiStepLabel-label.MuiStepLabel-active, .MuiStepLabel-label.MuiStepLabel-completed {
+    color: #11AFF0 !important;
+}
+
+.MuiStepIcon-text {
+    color: #11AFF0 !important;
+}
+
+.MuiStepConnector-line {
+    border-color: #151515 !important;
+}
+
+.MuiStepConnector-completed .MuiStepConnector-line, .MuiStepConnector-active .MuiStepConnector-line {
+    border-color: #11AFF0 !important;    
+}
+
+.MuiSvgIcon-root .MuiStepIcon-root text {
+    fill: #11AFF0 !important;
+    color: #11AFF0 !important;
+}
+
+.MuiSvgIcon-root .MuiStepIcon-root .MuiStepIcon-active {
+    fill: #151515 !important;
+    color: #151515 !important;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .signUp__formDiv {
+        grid-area: 1 / 1 / 11 / 6;
+        padding: .8rem;
+    }
+
+    .signUp__bannerDiv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .stepsContentContainer {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* .signup {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup__formdiv {
+    box-shadow: 0 0 9px #151515;
+    height: 100%;
+    width: calc(80% - 30px);
+    background-color: #323337;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.signup__formdiv h2 {
+    color: #11AFF0;
+}
+
+.stepsContentContainer {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.signup__formdiv form {
+    width: 100%;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__formdiv form input {
+    padding: 10px;
+    border: none;
+    margin: 8px 0;
+    border-radius: 4px;
+    background-color: #151515;
+    color: #11AFF0;
+}
+
+.signup__formdiv form input::placeholder {
+    color: #11AFF0;
+}
+
+.signup__banner {
+    box-shadow: 0 0 9px #151515;
+    height: 100%;
+    width: calc(20%);
+    background-color: #323337;
+    border-radius: 0px 8px 8px 0px;
+    overflow: hidden;
+}
+
+.signup__banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.submittext {
+    font-weight: 500;
+}
+
+.inputField {
+    margin: 10px 0;
+}
+
+.signup__formdiv .nameInputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup__formdiv .nameInputs input {
+    width: calc(50% - 5px);
+}
+
+.MuiPaper-root {
+    background-color: transparent !important;
+}
+
+.buttondivision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttondivision > button {
+    width: calc(50% - 5px);
+}
+
+.MuiStepLabel-label.MuiStepLabel-active, .MuiStepLabel-label.MuiStepLabel-completed {
+    color: #11AFF0 !important;
+}
+
+.MuiStepIcon-text {
+    color: #11AFF0 !important;
+}
+
+.MuiStepConnector-line {
+    border-color: #151515 !important;
+}
+
+.MuiStepConnector-completed .MuiStepConnector-line, .MuiStepConnector-active .MuiStepConnector-line {
+    border-color: #11AFF0 !important;    
+}
+
+.MuiSvgIcon-root .MuiStepIcon-root text {
+    fill: #11AFF0 !important;
+    color: #11AFF0 !important;
+}
+
+.MuiSvgIcon-root .MuiStepIcon-root .MuiStepIcon-active {
+    fill: #151515 !important;
+    color: #151515 !important;
+} */

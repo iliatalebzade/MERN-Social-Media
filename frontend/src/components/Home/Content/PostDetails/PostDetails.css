@@ -1,0 +1,106 @@
+.postDetails {
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #323337;
+}
+
+.postDetails > * {
+  border-radius: 8px;
+}
+
+.postDetails .postImage {
+  width: 100%;
+  box-shadow: 0 0 6px #19191b;
+}
+
+.postDetails > div {
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  color: #dbdbdd;
+  background-color: #19191b;
+}
+
+.buttonGroupDiv {
+  padding: 0.8rem;
+}
+
+.buttonGroupDiv button {
+  padding: 0.8rem;
+  border: none;
+  background-color: #f7284b;
+  font-weight: 500;
+  color: #dbdbdd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.buttonGroupDiv button:hover {
+  padding: 0.8rem;
+  border: none;
+  background-color: rgb(218, 31, 62);
+  font-weight: 500;
+  color: #dbdbdd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.likeBtn img {
+    width: 1.2rem;
+}
+
+.disabledBtn {
+    background-color: blue;
+}
+
+.num_of_likes {
+    margin-left: .5rem;
+}
+
+.postDetails > div > * {
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.postDetails > div > p {
+  color: #7d7d7d;
+}
+
+.postDetails > a {
+  text-decoration: none;
+  background-color: #11aff0;
+  padding: 0.8rem;
+  display: block;
+  color: #19191b;
+  font-weight: 500;
+  text-align: center;
+}
+
+.postDetails > a:hover {
+  background-color: #009edd;
+}
+
+.postDetails .tagsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.postDetails .tagItem {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+}
+
+.postDetails .tagItem {
+  cursor: pointer;
+}
+
+.postDetails .tagItem {
+  background-color: #323337;
+  margin: 0.4rem;
+  border-radius: 3px;
+}
+
+.postDetails .tagItem span span {
+  color: #11aff0;
+}

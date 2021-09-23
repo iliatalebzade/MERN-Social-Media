@@ -1,0 +1,64 @@
+.loggingButtonsDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.loggingButtonsDiv > button {
+    flex: 1;
+    white-space: nowrap;
+    border: none;
+    background-color: #1f1f1f;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.loggingButtonsDiv > button:hover {
+    transition-duration: 300ms;
+    color: #1f1f1f;
+    background-color: #11AFF0;
+}
+
+.loggingButtonsDiv > button:hover > a {
+    color: #1f1f1f;
+}
+
+.loggingButtonsDiv > button > a {
+    color: #11AFF0;
+    font-weight: 500;
+}
+
+.navbar__account--signedaccount {
+    grid-area: 7 / 1 / 8 / 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    background-color: #1f1f1f;
+    padding: .8rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar__account--signedaccount > span {
+    margin-left: .5rem;
+    color: #DBDBDD;
+    overflow: hidden;
+    width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: .1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .account__buttons {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .navbar__account--signedaccount > span {
+        font-size: 1rem;
+    }
+}
